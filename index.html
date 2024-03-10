@@ -1,34 +1,38 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>WEB - Welcome</title>
-  <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Team TEST</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <h1>
-    <a href="index.html">WEB</a>
-  </h1>
-  <ol>
-    <Li>
-      <a href="1.html">HTML</a>
-    </Li>
-    <Li>
-      <a href="2.html">CSS</a>
-    </Li>
-    <Li>
-      <a href="3.html">JavaScript</a>
-    </Li>
-  </ol>
-
-  <h2>
-    Web
-  </h2>
-    <p>
-      Web
-    </p>
-    <p style="margin-top:25px">
-      <img src=img/molu.gif style="float:left" width="10%" alt="몰루">
-    </p>
-
-  </body>
+    <div id="portal-container">
+        <div id="header">
+            <h1>3D Team TEST</h1>
+        </div>
+        <div id="content">
+            <div id="sidebar">
+                <!-- Add your portal navigation links here -->
+                <ul>
+                    <li>
+                        <a href="#" id="load-model">glb Import</a>
+                        <input type="file" id="model-input" accept=".gltf,.glb" style="display:none;">
+                    </li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </div>
+            <div id="canvas-container">
+                <canvas id="metaverse-canvas"></canvas>
+            </div>
+        </div>
+        <div id="footer">
+            <p>&copy; 2023 Dkim Company. All rights reserved.</p>
+        </div>
+    </div>
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="https://preview.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+    <script src="js/metaverse.js"></script>
+</body>
 </html>
